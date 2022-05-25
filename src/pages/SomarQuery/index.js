@@ -17,7 +17,7 @@ export default function SomarQuery() {
         <div> DIGITE OS NUMEROS QUE DESEJA SOMAR </div>
         <input type="number" value={n1} onChange={(e) => setN1(e.target.value)} />
         <input type="number" value={n2} onChange={(e) => setN2(e.target.value)} />
-        <button onClick={handleSoma}> DOBRAR </button>
+        <button onClick={handleSoma}> SOMAR </button>
         <div> { soma } </div>
     </div>
   )
