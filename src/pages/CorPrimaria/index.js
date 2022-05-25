@@ -17,8 +17,6 @@ export default function CorPrimaria() {
         }
 
     }
-
-    console.log(resposta);
     return (
         <div>
             <div> Digite uma cor: </div>
