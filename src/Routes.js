@@ -4,6 +4,8 @@ import React from 'react'
 
 // Davi
 import CorPrimaria from './pages/CorPrimaria'
+import Frequencia from './pages/Frequencia'
+
 
 // Biro
 import Dobro from './pages/Dobro'
@@ -21,6 +23,7 @@ export default function Path() {
             <Route exact path='/somarBody' element={<SomarQuery/>}></Route>
             <Route exact path='/media' element={<Media/>}></Route>
             <Route exact path='/ingressoCinema' element={<IngressoCinema/>}></Route>
+            <Route exact path='/Frequencia' element={<Frequencia/>}></Route>
         </Routes>
     </BrowserRouter>
   )
