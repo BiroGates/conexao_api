@@ -9,7 +9,7 @@ import CorPrimaria from './pages/CorPrimaria'
 import Dobro from './pages/Dobro'
 import SomarQuery from './pages/SomarQuery'
 import Media from './pages/Media'
-
+import IngressoCinema from './pages/IngressoCinema'
 
 export default function Path() {
   return (
@@ -20,6 +20,7 @@ export default function Path() {
             <Route exact path='/somarQuery' element={<SomarQuery/>}></Route>
             <Route exact path='/somarBody' element={<SomarQuery/>}></Route>
             <Route exact path='/media' element={<Media/>}></Route>
+            <Route exact path='/ingressoCinema' element={<IngressoCinema/>}></Route>
         </Routes>
     </BrowserRouter>
   )
