@@ -7,9 +7,9 @@ export default function CorPrimaria() {
     const[resposta, setResposta] = useState('');
 
     async function verificacaoCorPrimaria() {
-        const resp = await axios.get('http://localhost:5000/dia2/corprimaria' + cor);
+        const resp = await axios.get('http://localhost:5000/dia2/corprimaria/' + cor);
 
-        if(resp.data.primaria === true) {
+        if(resp.data.x === true) {
             setResposta('Sim, é uma cor Primaria');
         }
         else{
@@ -17,9 +17,14 @@ export default function CorPrimaria() {
         }
 
     }
+
+    console.log(resposta);
     return (
         <div>
-            Aloha
+            <div> Digite uma cor: </div>
+            <input type="text" value={cor} onChange={(e) => setCor(e.target.value)}/>
+            <button style={{display: "block"}} onClick={verificacaoCorPrimaria}> Verificar </button>
+            { resposta }
         </div>
     )
 
