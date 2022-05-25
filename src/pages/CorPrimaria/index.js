@@ -3,8 +3,8 @@ import axios from "axios"
 import { useState } from "react";
 
 export default function CorPrimaria() {
-    const[cor, setCor] = useState('');
-    const[resposta, setResposta] = useState('');
+    const [cor, setCor] = useState('');
+    const [resposta, setResposta] = useState('');
 
     async function verificacaoCorPrimaria() {
         const resp = await axios.get('http://localhost:5000/dia2/corprimaria/' + cor);
@@ -12,8 +12,8 @@ export default function CorPrimaria() {
         if(resp.data.x === true) {
             setResposta('Sim, é uma cor Primaria');
         }
-        else{
-            setResposta('Não, não é uma cor nesse carai');
+        else {
+            setResposta('Não, não é uma cor Primaria');
         }
 
     }
