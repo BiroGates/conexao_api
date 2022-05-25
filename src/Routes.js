@@ -18,6 +18,7 @@ export default function Path() {
             <Route exact path='/corPrimaria' element={<CorPrimaria/>}></Route>
             <Route exact path='/dobro' element={<Dobro/>}></Route>
             <Route exact path='/somarQuery' element={<SomarQuery/>}></Route>
+            <Route exact path='/somarBody' element={<SomarQuery/>}></Route>
         </Routes>
     </BrowserRouter>
   )
