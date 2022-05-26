@@ -13,6 +13,7 @@ import SomarQuery from './pages/SomarQuery'
 import Media from './pages/Media'
 import IngressoCinema from './pages/IngressoCinema'
 import MedirTemperatura from './pages/MedirTemperatura'
+import Tabuada from './pages/Tabuada'
 
 export default function Path() {
   return (
@@ -26,6 +27,7 @@ export default function Path() {
             <Route exact path='/ingressoCinema' element={<IngressoCinema/>}></Route>
             <Route exact path='/Frequencia' element={<Frequencia/>}></Route>
             <Route exact path='/medirTemperatura' element={<MedirTemperatura/>}></Route>
+            <Route exact path='/tabuada' element={<Tabuada/>}></Route>
         </Routes>
     </BrowserRouter>
   )
