@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function index() {
+export default function Home() {
     return (
         <main>
             <h1>Pagina Home</h1>

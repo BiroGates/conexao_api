@@ -15,10 +15,13 @@ import IngressoCinema from './pages/IngressoCinema'
 import MedirTemperatura from './pages/MedirTemperatura'
 import Tabuada from './pages/Tabuada'
 
+import Home from './pages/home'
+
 export default function Path() {
   return (
     <BrowserRouter>
         <Routes>
+            <Route exact path='/home' element={<Home/>}></Route>
             <Route exact path='/corPrimaria' element={<CorPrimaria/>}></Route>
             <Route exact path='/dobro' element={<Dobro/>}></Route>
             <Route exact path='/somarQuery' element={<SomarQuery/>}></Route>

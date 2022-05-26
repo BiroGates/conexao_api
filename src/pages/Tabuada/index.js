@@ -7,7 +7,7 @@ export default function Tabuada() {
     const [result, setResult] = useState([]);
 
     async function handleTabuada (){
-        let resp = await axios.get(`http://localhost:5000/frequencia/q?numero`);            
+        let resp = await axios.get(`http://localhost:5000/tabuada/q?numero=${value}`);            
         setResult(resp.data.x);
     }
 
