@@ -12,6 +12,7 @@ import Dobro from './pages/Dobro'
 import SomarQuery from './pages/SomarQuery'
 import Media from './pages/Media'
 import IngressoCinema from './pages/IngressoCinema'
+import MedirTemperatura from './pages/MedirTemperatura'
 
 export default function Path() {
   return (
@@ -24,6 +25,7 @@ export default function Path() {
             <Route exact path='/media' element={<Media/>}></Route>
             <Route exact path='/ingressoCinema' element={<IngressoCinema/>}></Route>
             <Route exact path='/Frequencia' element={<Frequencia/>}></Route>
+            <Route exact path='/medirTemperatura' element={<MedirTemperatura/>}></Route>
         </Routes>
     </BrowserRouter>
   )

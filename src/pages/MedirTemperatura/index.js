@@ -15,7 +15,8 @@ export default function MedirTemperatura() {
     return (
     <div>
         <div> PROGRAMA DETERMINAR ESTADO FEBRIL: </div>
-        <input style={{display: "block"}} type="text" value={value} />
+        <input style={{display: "block"}} type="text" value={value} onChange={(e)=> setValue(e.target.value)} />
+        <button style={{display: "block"}} onClick={handleFebre} > VERIFICAR </button>
         <div style={{display: "block"}} > { result } </div>
     </div>
   )
